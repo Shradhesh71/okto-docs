@@ -1,0 +1,136 @@
+---
+title: Okto Layer Works
+---
+
+# How the Okto Layer Works
+
+The Okto Layer simplifies blockchain interactions by abstracting the complexity of multi-chain transactions, liquidity, and wallet management. It ensures a seamless user experience, handling complex processes behind the scenes with precision and efficiency.
+
+---
+
+## Interaction Flow
+
+![Image](/components/work.webp)
+
+**1. User Request via Gateway**
+
+- A user initiates a request through a user-friendly DApp interface connected to the Okto Gateway.
+- For example, the user might request, “Transfer USDC from Ethereum to BNB Chain and stake it.”
+- The Gateway validates the request and calculates the associated costs.
+
+**2. Job Creation on the Okto Chain**
+
+- The validated request is sent to the **Okto Chain**, where it is converted into a "job."
+- This job specifies the user's intent, such as bridging assets and staking tokens.
+- The job is recorded immutably on the Okto Chain for transparency and coordination.
+
+**3. Orchestration by the Decentralized Transaction Networks (DTN)**
+
+- The DTN picks up the job, breaks it into subtasks, and executes them in sequence.
+- For example:
+  1. Move USDC from Ethereum to BNB Chain using the **Unified Liquidity Layer (ULL)**.
+  2. Stake tokens on the BNB Chain.
+- If issues arise, such as failed transactions, the DTN retries the operation automatically.
+
+---
+
+## On-Chain and Off-Chain Interactions
+
+The Okto Layer effectively combines on-chain and off-chain processes to optimize speed, security, and user experience.
+
+### On-Chain Processes:
+
+1. **Immutable Ledger for Coordination**
+
+   - The **Okto Chain** records jobs, user intents, wallet permissions, and policy data.
+   - This provides a tamper-proof record of every action and its associated details.
+
+2. **Policy and Permission Management**
+
+   - The chain manages wallet permissions, approved bridging solutions, and solvers.
+
+3. **Scalability and Efficiency**
+
+   - Leveraging rollup technology, the Okto Chain ensures scalability while maintaining cost-efficiency.
+
+4. **Proof Storage**
+   - The chain securely stores zero-knowledge proofs and hashed data, ensuring accuracy and preventing tampering.
+
+### Off-Chain Processes:
+
+1. **ULL for Liquidity Optimization**
+
+   - Aggregates data from solutions like Socket or LayerZero to determine the most efficient route for asset transfers.
+   - Considers speed, cost, and security in real-time.
+
+2. **Transaction Preparation by DTN**
+
+   - Prepares transactions by adding gas fees, nonce values, and other essential details.
+   - Arranges transactions in an optimal order, running independent operations in parallel.
+
+3. **Secure Signing by DWN**
+   - The **Decentralized Wallet Network (DWN)** ensures that all transactions are signed securely using MPC-secured nodes.
+   - Verifies alignment with the Okto Chain’s records before signing.
+
+---
+
+## Key Processes
+
+1. **Transaction Lifecycle Management by DTN**
+
+   - Manages the end-to-end transaction process, handling issues like chain reorganizations and gas price fluctuations.
+   - Executes subtasks such as swapping, bridging, and staking assets across chains.
+
+2. **Unified Liquidity Layer Operations**
+
+   - The ULL enables efficient cross-chain swaps by utilizing solvers who front liquidity and settle later.
+
+3. **Secure Execution**
+
+   - Every transaction is closely monitored until confirmed on the blockchain, ensuring reliability.
+
+4. **Final Logging on Okto Chain**
+   - Logs the outcome—success or failure—providing users with a transparent and immutable record.
+
+---
+
+## Example Walkthrough
+
+### Simplifying a Complex Task:
+
+**Objective:** Transfer USDC from Ethereum to BNB Chain and stake it.
+
+- **Step 1:** The user makes a request through a DApp interface.
+- **Step 2:** The Gateway validates the request and sends it to the Okto Chain.
+- **Step 3:** The DTN breaks the job into subtasks, prepares transactions, and consults the ULL for optimal routes.
+- **Step 4:** The DWN securely signs all transactions.
+- **Step 5:** The DTN executes the transactions, monitors confirmations, and retries failed actions if necessary.
+- **Step 6:** The Okto Chain logs the final result, ensuring transparency.
+- **Step 7:** The user sees the result: USDC successfully staked on the BNB Chain.
+
+---
+
+## What Makes the Okto Layer Unique?
+
+1. **Unified Coordination:**
+
+   - Combines the power of DWNs, ULL, and DTN into a cohesive ecosystem.
+
+2. **Scalability and Security:**
+
+   - Rollup-based architecture ensures cost-effective and secure operations.
+
+3. **Developer-Friendly:**
+
+   - Provides APIs and SDKs for easy integration into existing applications.
+
+4. **Trustless and Transparent:**
+   - Leverages blockchain’s innate transparency to log and verify every operation.
+
+---
+
+<Callout>
+  The Okto Layer is a paradigm shift in blockchain technology, offering a
+  seamless, user-centric experience while maintaining the transparency and
+  security of decentralized systems.
+</Callout>

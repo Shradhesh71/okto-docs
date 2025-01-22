@@ -1,0 +1,119 @@
+---
+title: Core Components
+description: The Core Components of the Okto Layer
+---
+
+## The Core Components of the Okto Layer
+
+The Okto Layer represents a paradigm shift in blockchain technology, designed to simplify Web3 experiences through its modular architecture. At the heart of this system are four core components that collectively address the pain points of decentralized ecosystems while enhancing functionality and user accessibility.
+
+1. Decentralized Wallet Networks (DWNs)
+2. Unified Liquidity Layer (ULL)
+3. Decentralized Transaction Networks (DTNs)
+4. The Okto Chain
+
+![Image](/components/main.webp)
+
+## 1. Decentralized Wallet Networks (DWNs)
+
+Decentralized Wallet Networks form the backbone of the Okto Layer, enabling users to interact seamlessly across multiple blockchains without the hassle of managing separate wallets for each chain.
+
+At the heart of Okto’s user experience is this innovative DWN, designed specifically to alleviate the complexities users face when utilizing various wallets for different blockchains. If you’ve ever navigated the cumbersome process of handling multiple wallets across networks like Ethereum, Solana, Aptos, and others, you know it can be a headache. The DWN simplifies this by providing a single, unified wallet that automatically integrates with multiple chains, enhancing user accessibility and streamlining transactions.
+
+![Image](/components/dwn.webp)
+Under the hood, the DWN employs a state-of-the-art approach using delegated Multi-Party Computation (MPC) signers—a network of decentralized, trust-minimized nodes that manage wallet keys securely. These MPC signers are closely connected to EigenLayer AVS (Actively Validated Services), creating a robust and reliable hosting environment for these nodes. Okto operates using an 11/20 MPC signing scheme in collaboration with Silence Laboratories and other protocols. This structure means that, out of the 20 nodes participating in the MPC signing process, a threshold of 11 must come together to approve a transaction, ensuring that decisions are made collectively. This decentralized architecture not only enhances security by eliminating single points of failure but also ensures that no single entity, including Okto, holds unilateral control over the signing process.
+
+Moreover, the use of these decentralized nodes enhances resilience and scalability, allowing the network to adapt dynamically to increasing user demands while maintaining a high level of security. With the DWN, users can trust that their assets are protected in a secure, decentralized environment, making their blockchain interactions smooth and efficient.
+
+#### Key Features:
+
+- **Unified Wallet System:** Provides a single interface for interacting with assets across diverse chains.
+- **Enhanced Security:** Implements robust cryptographic mechanisms, ensuring secure storage and transaction signing.
+- **Interoperability:** Supports multi-chain operations, allowing users to send, receive, and manage assets on any compatible blockchain.
+
+#### Benefits:
+
+1. **Streamlined Experience:** Users no longer need to juggle multiple wallets, as DWNs unify all interactions into one cohesive system.
+2. **Cost Efficiency:** By abstracting wallet management, DWNs reduce gas fees and operational overhead.
+3. **Accessibility:** Simplifies the onboarding process for users new to blockchain.
+
+<Callout>
+  DWNs not only enhance usability but also lay the foundation for secure,
+  seamless, and scalable wallet interactions across the decentralized world.
+</Callout>
+
+## 2. Unified Liquidity Layer (ULL)
+
+The Unified Liquidity Layer is a revolutionary component that tackles the fragmented liquidity problem in blockchain ecosystems. ULL ensures efficient cross-chain swaps and liquidity pooling, providing a seamless trading experience.
+
+![Image](/components/ull.webp)
+Think of the ULL as an “aggregator of aggregators.” It connects to various bridging and swapping solutions, such as LayerZero, Socket, and Wormhole, and automatically picks the best option to meet your goals—be it speed, cost, or security. This is all powered by the ERC-7683 standard, a common language that helps different blockchains work together smoothly across EVM and non-EVM chains, ensuring your swaps and transfers feel as smooth as if you were using just one blockchain.
+
+#### Key Features:
+
+- **ERC-7683 Compatibility:** By leveraging this Ethereum standard, ULL ensures a unified approach to cross-chain liquidity, enabling seamless interaction across diverse ecosystems, including non-EVM chains like Solana and Aptos.
+- **Aggregator of Aggregators:** The ULL connects with multiple bridging and swapping solutions, including LayerZero, Socket, and Wormhole, and determines the most efficient route in real-time.
+- **Automatic Path Optimization:** Cross Chain interaction becomes much easier, for example, If you want to swap from USDC on Polygon to BNB on BNB Chain, the ULL checks all available routes and picks the one with the lowest cost or fastest speed.
+- **Minimized Fees:** While users pay network fees and a small Okto fee, the ULL's efficient routing and operation pooling often results in lower total costs compared to manual bridging.
+
+#### Benefits:
+
+1. **Improved Trading Efficiency:** Eliminates the need for intermediaries in cross-chain transactions.
+2. **Lower Costs:** Reduces slippage and transaction fees by optimizing liquidity routes.
+3. **Universal Access:** Empowers users to trade assets across chains without barriers.
+
+<Callout>
+  ULL bridges the gap between isolated blockchain networks, making liquidity
+  accessible to everyone, everywhere.
+</Callout>
+
+## 3. Decentralized Transaction Networks (DTNs)
+
+Decentralized Transaction Networks automate and simplify complex multi-chain operations, ensuring reliability and transparency for all users.
+
+![Image](/components/dtn.webp)
+The DTN is the “brain” coordinating all your same chain or multi-chain moves. Normally, you might do each step manually, clicking around and paying separate gas fees. With the DTN, everything is automated and sequenced or parallelly executed just how it needs to be done,, saving you money, time and stress.
+
+#### Key Features:
+
+- **Automated Transaction Execution:** Streamlines multi-step processes like token swaps and staking.
+- **Smart Routing:** Identifies the most efficient pathways for executing transactions.
+- **Transparency:** Ensures all transactions are verifiable on-chain, maintaining trust.
+
+#### Benefits:
+
+1. **Time-Saving:** Reduces the effort needed for managing intricate blockchain operations.
+2. **Error Reduction:** Minimizes human errors through automation.
+3. **Scalability:** Supports high transaction throughput without compromising on reliability.
+
+<Callout>
+  DTNs redefine multi-chain transaction management, turning complex processes
+  into simple, automated workflows.
+</Callout>
+
+## 4. The Okto Chain
+
+At the center of the Okto Layer is the Okto Chain, a trustless coordination mechanism designed to ensure decentralization and transparency.
+
+First, let's be clear about what the Okto Chain isn't. It's not another blockchain competing for your assets, trying to be the next Ethereum, or aiming to become a major network. Instead, built as a ZK-based Layer 2 on Polygon CDK, it serves as a specialized command center that coordinates everything happening in the Okto ecosystem. It records key data, enforces rules, and ensures that all parts of Okto (DWN, ULL, DTN) behave correctly in a trustless, transparent way
+
+#### Key Features:
+
+- **Consensus Mechanism:** Utilizes a secure, scalable protocol to achieve network-wide agreement.
+- **Interoperability Protocols:** Facilitates seamless communication between chains.
+- **Governance:** Empowers stakeholders to participate in decision-making processes.
+
+#### Benefits:
+
+1. **Trustless Operations:** Removes the need for intermediaries, ensuring impartiality.
+2. **Enhanced Security:** Protects the network through advanced cryptographic methods.
+3. **Community-Driven:** Encourages active participation and innovation.
+
+<Callout>
+  The Okto Chain stands as a beacon of decentralization, ensuring fairness,
+  security, and transparency across the blockchain ecosystem.
+</Callout>
+
+---
+
+These components collectively position the Okto Layer as a game-changer in blockchain technology, addressing challenges like fragmentation, complexity, and user accessibility. Together, they create a cohesive, user-friendly environment for developers and end-users alike.
